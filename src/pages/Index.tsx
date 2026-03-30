@@ -178,7 +178,7 @@ export default function Index() {
               <span className="italic font-light">Васильченко</span>
             </h1>
             <div className="ornament my-8 fade-up-delay-3">
-              <span className="text-xs font-oswald tracking-[0.3em] uppercase text-muted-foreground">с 1983 года</span>
+              <span className="text-xs font-oswald tracking-[0.3em] uppercase text-muted-foreground">с 2025 года</span>
             </div>
             <p className="text-foreground/70 text-xl font-light leading-relaxed fade-up-delay-4 max-w-md">
               Песни о дорогах, которые мы выбираем. О людях, которых помним. О времени, которое не возвращается.
@@ -350,7 +350,7 @@ export default function Index() {
             <p className="font-caveat text-accent text-lg mb-1">история</p>
             <h2 className="font-cormorant text-5xl font-light mb-6">Об авторе</h2>
             <div className="ornament mb-8">
-              <span className="text-xs font-oswald tracking-[0.3em] uppercase text-muted-foreground">1960 — наши дни</span>
+              <span className="text-xs font-oswald tracking-[0.3em] uppercase text-muted-foreground">2025 — наши дни</span>
             </div>
             <div className="space-y-4 text-foreground/80 text-lg leading-relaxed">
               <p>
