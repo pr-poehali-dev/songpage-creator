@@ -510,7 +510,14 @@ export default function Index() {
             </button>
           </div>
 
-          <div className="flex justify-center gap-8 mt-12">
+          <div className="vintage-card px-6 py-4 mt-8 flex items-center gap-3">
+            <Icon name="Mail" size={14} className="text-accent shrink-0" />
+            <a href="mailto:alex.shaman1313@gmail.com" className="font-cormorant text-lg text-foreground hover:text-accent transition-colors">
+              alex.shaman1313@gmail.com
+            </a>
+          </div>
+
+          <div className="flex justify-center gap-8 mt-8">
             {[
               { icon: "Music", label: "ВКонтакте" },
               { icon: "Youtube", label: "YouTube" },
