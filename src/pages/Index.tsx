@@ -2,11 +2,9 @@ import { useState, useRef, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
 const TRACKS = [
-  { id: 1, title: "Осенний перрон", album: "Первые листья", year: "1987", duration: 214 },
-  { id: 2, title: "Письмо в никуда", album: "Первые листья", year: "1987", duration: 183 },
-  { id: 3, title: "Ночной трамвай", album: "Городские зарисовки", year: "1991", duration: 247 },
-  { id: 4, title: "Запах сирени", album: "Городские зарисовки", year: "1991", duration: 198 },
-  { id: 5, title: "Старый маяк", album: "На краю земли", year: "1995", duration: 263 },
+  { id: 1, title: "Гостиница Сновидений", album: "Гостиница Сновидений", year: "2025", duration: 214 },
+  { id: 2, title: "Зов далёких звёзд", album: "Зов далёких звёзд", year: "2025", duration: 198 },
+  { id: 3, title: "Ночи в Париже", album: "Ночи в Париже", year: "2025", duration: 237 },
 ];
 
 const GALLERY = [
@@ -329,6 +327,20 @@ export default function Index() {
             </div>
           ))}
         </div>
+
+        <div className="mt-10 vintage-card px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-1">Доступно на всех площадках</p>
+            <p className="font-cormorant text-lg text-foreground">Слушайте в Яндекс Музыке, ВКонтакте, Spotify и других сервисах</p>
+          </div>
+          <div className="flex gap-3 shrink-0">
+            {["Яндекс", "VK", "Spotify"].map((s) => (
+              <button key={s} className="font-oswald text-[10px] tracking-[0.15em] uppercase px-4 py-2 border border-border hover:border-accent hover:text-accent transition-colors text-muted-foreground">
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ABOUT */}
@@ -354,24 +366,30 @@ export default function Index() {
             </div>
             <div className="space-y-4 text-foreground/80 text-lg leading-relaxed">
               <p>
-                Виктор Листьев начал писать стихи в школе, а первую песню записал в 19 лет
-                на катушечный магнитофон в комнате студенческого общежития.
+                Музыка и поэзия — моя стихия: пишу стихи, сочиняю песни, объединяя слово и звук
+                в единое целое.
               </p>
               <p>
-                За сорок лет творческой жизни он выпустил восемь альбомов, объездил с концертами
-                более двухсот городов от Калининграда до Владивостока.
+                Литература: создаю рассказы в разных форматах — от притчей до современной прозы.
               </p>
               <p>
-                Его песни — это хроника эпохи: перроны, проводы, письма, которые не отправили.
-                Голос тех, кто жил тихо, но чувствовал глубоко.
+                Стихи и тексты песен — эксперименты в разных стилях. Музыка — здесь мои тексты
+                оживают в «кружевах звука».
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 mt-10">
+            <div className="vintage-card px-5 py-4 mt-6 flex items-center gap-3">
+              <Icon name="Award" size={16} className="text-accent shrink-0" />
+              <p className="font-oswald text-xs tracking-[0.15em] uppercase text-foreground">
+                Член Союза Писателей России
+              </p>
+            </div>
+
+            <div className="grid grid-cols-3 gap-6 mt-8">
               {[
-                { num: "8", label: "альбомов" },
-                { num: "40+", label: "лет на сцене" },
-                { num: "200+", label: "городов" },
+                { num: "3", label: "альбома" },
+                { num: "∞", label: "стилей" },
+                { num: "2025", label: "старт" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center vintage-card p-4">
                   <p className="font-cormorant text-4xl font-light text-accent">{stat.num}</p>
