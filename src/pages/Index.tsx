@@ -120,7 +120,7 @@ export default function Index() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-oswald text-lg tracking-[0.2em] uppercase text-foreground">
-            В. Листьев
+            А. Васильченко
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -174,8 +174,8 @@ export default function Index() {
           <div>
             <p className="font-caveat text-accent text-xl mb-3 fade-up-delay-1">автор песен</p>
             <h1 className="font-cormorant text-6xl md:text-8xl font-light leading-[0.9] text-foreground fade-up-delay-2">
-              Виктор<br />
-              <span className="italic font-light">Листьев</span>
+              Алексей<br />
+              <span className="italic font-light">Васильченко</span>
             </h1>
             <div className="ornament my-8 fade-up-delay-3">
               <span className="text-xs font-oswald tracking-[0.3em] uppercase text-muted-foreground">с 1983 года</span>
@@ -215,7 +215,7 @@ export default function Index() {
                 ))}
                 <div className="absolute inset-[90px] rounded-full flex flex-col items-center justify-center text-center"
                   style={{ background: "hsl(35 30% 82%)", border: "1px solid hsl(30 25% 68%)" }}>
-                  <p className="font-oswald text-[8px] tracking-[0.15em] uppercase text-muted-foreground">В. Листьев</p>
+                  <p className="font-oswald text-[8px] tracking-[0.15em] uppercase text-muted-foreground">А. Васильченко</p>
                   <p className="font-cormorant italic text-[10px] text-foreground leading-tight mt-0.5">
                     {track.title}
                   </p>
@@ -337,7 +337,7 @@ export default function Index() {
           <div className="relative">
             <img
               src="https://cdn.poehali.dev/projects/08cf3404-1c1f-4f8b-bcb4-9a2d60e53895/files/e8637f85-e362-4878-a574-ff0e639fde8f.jpg"
-              alt="Виктор Листьев"
+              alt="Алексей Васильченко"
               className="w-full aspect-[3/4] object-cover vintage-border"
               style={{ filter: "sepia(40%) contrast(1.05)" }}
             />
@@ -513,7 +513,7 @@ export default function Index() {
       <footer className="border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-oswald text-xs tracking-[0.2em] uppercase text-muted-foreground">
-            © 2026 Виктор Листьев
+            © 2026 Алексей Васильченко
           </p>
           <div className="ornament flex-1 mx-8 hidden md:flex">
             <span />
