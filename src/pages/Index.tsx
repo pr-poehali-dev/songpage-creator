@@ -356,11 +356,14 @@ export default function Index() {
             <p className="font-cormorant text-lg text-foreground">Слушайте в Яндекс Музыке, ВКонтакте, Spotify и других сервисах</p>
           </div>
           <div className="flex gap-3 shrink-0">
-            {["Яндекс", "VK", "Spotify"].map((s) => (
-              <button key={s} className="font-oswald text-[10px] tracking-[0.15em] uppercase px-4 py-2 border border-border hover:border-accent hover:text-accent transition-colors text-muted-foreground">
-                {s}
-              </button>
-            ))}
+            <a href="https://music.yandex.ru/artist/24467712" target="_blank" rel="noopener noreferrer"
+              className="font-oswald text-[10px] tracking-[0.15em] uppercase px-4 py-2 border border-border hover:border-accent hover:text-accent transition-colors text-muted-foreground">
+              Яндекс
+            </a>
+            <a href="https://vk.com/artist/alexeyvasilchenko" target="_blank" rel="noopener noreferrer"
+              className="font-oswald text-[10px] tracking-[0.15em] uppercase px-4 py-2 border border-border hover:border-accent hover:text-accent transition-colors text-muted-foreground">
+              VK
+            </a>
           </div>
         </div>
       </section>
@@ -569,16 +572,17 @@ export default function Index() {
 
           <div className="flex justify-center gap-8 mt-8">
             {[
-              { icon: "Music", label: "ВКонтакте" },
-              { icon: "Youtube", label: "YouTube" },
-              { icon: "Mail", label: "Email" },
+              { icon: "Music", label: "ВКонтакте", href: "https://vk.com/artist/alexeyvasilchenko" },
+              { icon: "Headphones", label: "Яндекс", href: "https://music.yandex.ru/artist/24467712" },
+              { icon: "Mail", label: "Email", href: "mailto:alex.shaman1313@gmail.com" },
             ].map((s) => (
-              <button key={s.label} className="flex flex-col items-center gap-2 text-muted-foreground hover:text-accent transition-colors group">
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 text-muted-foreground hover:text-accent transition-colors group">
                 <div className="w-10 h-10 border border-border group-hover:border-accent rounded-full flex items-center justify-center transition-colors">
                   <Icon name={s.icon} fallback="Music" size={14} />
                 </div>
                 <span className="font-oswald text-[9px] tracking-[0.2em] uppercase">{s.label}</span>
-              </button>
+              </a>
             ))}
           </div>
         </div>
