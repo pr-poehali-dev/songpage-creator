@@ -373,7 +373,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="https://cdn.poehali.dev/projects/08cf3404-1c1f-4f8b-bcb4-9a2d60e53895/files/e8637f85-e362-4878-a574-ff0e639fde8f.jpg"
+              src="https://cdn.poehali.dev/projects/08cf3404-1c1f-4f8b-bcb4-9a2d60e53895/bucket/80d829f1-8409-4e07-8897-3f0a37bb5c3a.JPG"
               alt="Алексей Васильченко"
               className="w-full aspect-[3/4] object-cover vintage-border"
               style={{ filter: "sepia(40%) contrast(1.05)" }}
