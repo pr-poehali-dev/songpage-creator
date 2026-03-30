@@ -140,7 +140,7 @@ export default function Index() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-oswald text-lg tracking-[0.2em] uppercase text-foreground">
-            А. Васильченко
+            AGVMusic
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -588,7 +588,7 @@ export default function Index() {
       <footer className="border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-oswald text-xs tracking-[0.2em] uppercase text-muted-foreground">
-            © 2026 Алексей Васильченко
+            © 2026 AGVMusic
           </p>
           <div className="ornament flex-1 mx-8 hidden md:flex">
             <span />
